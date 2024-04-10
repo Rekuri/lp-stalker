@@ -14,6 +14,7 @@ body {
 .container {
     width: auto;
     display: flex;
+    flex-wrap: wrap;
     background: rgba(255, 255, 255, .5);
     padding: 1rem;
     margin: 5px;
@@ -80,4 +81,17 @@ body {
 .update-btn button:hover {
     background-color: rgba(183, 0, 255, 0.5);
     cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    body {
+        padding: 2rem 0;
+    }
+
+    .player {
+        width: 380px;
+        padding: .5rem;
+    }
 }
