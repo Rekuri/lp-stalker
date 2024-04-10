@@ -4,7 +4,6 @@ function fetchRank() {
     })
     .then((response) => response.json())
     .then((json) => {
-        console.log(json);
         document.getElementById("Rekuri").getElementsByClassName("player-name")[0].innerText = json["summonerData"]["gameName"] + "#" + json["summonerData"]["tagLine"];
         document.getElementById("Rekuri").getElementsByClassName("player-icon-image")[0].src = `https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/profile-icons/${json["puuidInfo"]["profileIconId"]}.jpg`;
         document.getElementById("Rekuri").getElementsByClassName("player-icon-border")[0].src = `https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/ranked-emblem/wings/wings_${(json["rankedInfo"][0]["tier"]).toLowerCase()}.png`;
