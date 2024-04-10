@@ -3,14 +3,15 @@
 body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #4d4d4d, #9c9c9c);
+    background: linear-gradient(to top, #20002c, #5a4463);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container {
-    width: 450;
+    width: auto;
+    display: flex;
     background: rgba(255, 255, 255, .5);
     padding: 4rem;
     margin: 5px;
@@ -18,15 +19,36 @@ body {
     position: relative;
 }
 
+.player {
+    position: relative;
+    background: rgba(255, 255, 255, .5);
+    padding: .5rem;
+    margin: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 8px 2px 1px rgba(183, 0, 255, 0.2);
+}
+
 .player-icon {
-    margin-bottom: 2rem;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
-.player-icon img {
-    width: 150px;
+.player-icon-image {
+    width: 64px;
+    border-radius: 32px;
 }
 
-.player-icon,
+.player-icon-border {
+    position: absolute;
+    top: -108px;
+    left: -58px;
+    width: 180px;
+}
+
 .player-header {
     text-align: center;
 }
@@ -37,6 +59,7 @@ body {
 }
 
 .update-btn {
+    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +68,7 @@ body {
 .update-btn button {
     background-color: black;
     color: white;
-    padding: .5rem;
+    padding: .75rem;
     border-radius: 20px;
     text-transform: uppercase;
     transition: background .5s;
