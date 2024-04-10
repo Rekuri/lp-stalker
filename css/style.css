@@ -13,7 +13,7 @@ body {
     width: auto;
     display: flex;
     background: rgba(255, 255, 255, .5);
-    padding: 4rem;
+    padding: 1rem;
     margin: 5px;
     border-radius: 10px;
     position: relative;
@@ -66,15 +66,16 @@ body {
 }
 
 .update-btn button {
-    background-color: black;
+    background-color: rgba(183, 0, 255, 0.2);
     color: white;
     padding: .75rem;
-    border-radius: 20px;
+    border-radius: 10px;
+    font-weight: 600;
     text-transform: uppercase;
     transition: background .5s;
 }
 
 .update-btn button:hover {
-    background-color: rgba(0, 0, 0, .75);
+    background-color: rgba(183, 0, 255, 0.5);
     cursor: pointer;
 }
