@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's my LP</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="player" id="Rekuri">
+      <div class="player-icon">
+        <img src="logo.jpg" alt="icon">
+        <div class="player-header">
+          <h1 class="player-name">Rekuri#NA1</h1>
+          <h2 class="player-rank">Iron IV 10LP</h2>
+          <div class="win-loss">1W 100L 1% WR</div>
+        </div>
+      </div>
+    </div>
+    <div class="update-btn">
+      <button type="button" onclick="fetchRank()">Update</button>
+    </div>
+  </div>
+
+<script src="scripts/fetchRank.js"></script>
 </body>
 </html>
